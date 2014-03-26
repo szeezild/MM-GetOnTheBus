@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075FAF2C18E32C5300AFAE65 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075FAF2B18E32C5300AFAE65 /* DetailViewController.m */; };
+		075FAF2F18E32F6400AFAE65 /* BusStopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 075FAF2E18E32F6400AFAE65 /* BusStopAnnotation.m */; };
 		079A6DD218E2411C003DEFAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079A6DD118E2411C003DEFAF /* Foundation.framework */; };
 		079A6DD418E2411C003DEFAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079A6DD318E2411C003DEFAF /* CoreGraphics.framework */; };
 		079A6DD618E2411C003DEFAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079A6DD518E2411C003DEFAF /* UIKit.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075FAF2A18E32C5300AFAE65 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		075FAF2B18E32C5300AFAE65 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		075FAF2D18E32F6400AFAE65 /* BusStopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopAnnotation.h; sourceTree = "<group>"; };
+		075FAF2E18E32F6400AFAE65 /* BusStopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopAnnotation.m; sourceTree = "<group>"; };
 		079A6DCE18E2411C003DEFAF /* GetOnTheBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetOnTheBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		079A6DD118E2411C003DEFAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		079A6DD318E2411C003DEFAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +129,10 @@
 				079A6DE718E2411C003DEFAF /* DSViewController.m */,
 				079A6DE918E2411C003DEFAF /* Images.xcassets */,
 				079A6DD818E2411C003DEFAF /* Supporting Files */,
+				075FAF2A18E32C5300AFAE65 /* DetailViewController.h */,
+				075FAF2B18E32C5300AFAE65 /* DetailViewController.m */,
+				075FAF2D18E32F6400AFAE65 /* BusStopAnnotation.h */,
+				075FAF2E18E32F6400AFAE65 /* BusStopAnnotation.m */,
 			);
 			path = GetOnTheBus;
 			sourceTree = "<group>";
@@ -255,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				079A6DDE18E2411C003DEFAF /* main.m in Sources */,
+				075FAF2F18E32F6400AFAE65 /* BusStopAnnotation.m in Sources */,
 				079A6DE818E2411C003DEFAF /* DSViewController.m in Sources */,
 				079A6DE218E2411C003DEFAF /* DSAppDelegate.m in Sources */,
+				075FAF2C18E32C5300AFAE65 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +473,7 @@
 				079A6E0218E2411D003DEFAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		079A6E0318E2411D003DEFAF /* Build configuration list for PBXNativeTarget "GetOnTheBusTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				079A6E0518E2411D003DEFAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
