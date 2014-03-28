@@ -81,26 +81,27 @@
         
 //        sets center as average of all bus stops
 //        This DOESNT WORK BECAUSE OF BAD DATA POINT IN CTA DATA
+//        CLLocationCoordinate2D avgCoordinate = CLLocationCoordinate2DMake(0, 0);
+//        
+//        for (NSDictionary*stop in busStops) {
+//            double lat = [stop[@"latitude"] doubleValue];
+//            double lng = [stop[@"longitude"] doubleValue];
+//            
+//            avgCoordinate.latitude += lat;
+//            avgCoordinate.longitude += lng;
+//        }
+//        
+//        avgCoordinate.latitude /= busStops.count;
+//        avgCoordinate.longitude /= busStops.count;
+
         
-        CLLocationCoordinate2D avgCoordinate = CLLocationCoordinate2DMake(0, 0);
-        
-        for (NSDictionary*stop in busStops) {
-            double lat = [stop[@"latitude"] doubleValue];
-            double lng = [stop[@"longitude"] doubleValue];
-            
-            avgCoordinate.latitude += lat;
-            avgCoordinate.longitude += lng;
-        }
-        
-        avgCoordinate.latitude /= busStops.count;
-        avgCoordinate.longitude /= busStops.count;
-        
+        CLLocationCoordinate2D centerCoord = CLLocationCoordinate2DMake(41.893,-87.6353);
         MKCoordinateSpan coordSpan = MKCoordinateSpanMake(.4, .4);
-        MKCoordinateRegion region = MKCoordinateRegionMake(avgCoordinate, coordSpan);
+        MKCoordinateRegion region = MKCoordinateRegionMake(centerCoord, coordSpan);
         self.mapView.region = region;
 
 //        
-//        CLLocationCoordinate2D centerCoord = CLLocationCoordinate2DMake(41.893,-87.6353);
+
 //        MKCoordinateSpan coordSpan = MKCoordinateSpanMake(.4, .4);
 //        MKCoordinateRegion region = MKCoordinateRegionMake(avgCoordinate, coordSpan);
         
